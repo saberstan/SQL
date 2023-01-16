@@ -1,0 +1,26 @@
+CREATE TABLE 'paint_store' (id integer PRIMARY KEY, name TEXT, rank INTEGER, price INTEGER, sheen TEXT);
+Previous line is based on my knowledge of paint and what I think the paint products should be ranked as with pricing. 
+
+INSERT INTO 'paint_store' VALUES(1,'Emerald_Designer',1,115,'satin');
+INSERT INTO 'paint_store' VALUES(2,'Emerald',2,95,'satin');
+INSERT INTO 'paint_store' VALUES(3,'Duration',3,85,'satin');
+INSERT INTO 'paint_store' VALUES(4,'SuperPaintAir',4,80,'satin');
+INSERT INTO 'paint_store' VALUES(5,'SuperPaintSanitize',5,81,'satin');
+INSERT INTO 'paint_store'VALUES(6,'SuperPaint',6,74,'satin');
+INSERT INTO 'paint_store'VALUES(7,'Cashmere',7,69,'LowLustre');
+INSERT INTO 'paint_store'VALUES(8,'Captivate',8,43,'satin');
+INSERT INTO 'paint_store'VALUES(9,'ProMar200',9,87,'Eg-shel');
+INSERT INTO 'paint_store'VALUES(10,'ProMar400',10,78,'Eg-Shel');
+INSERT INTO 'paint_store'VALUES(11,'PropertySolutions',11,66,'Eg-shel');
+INSERT INTO 'paint_store'VALUES(12,'EmeraldRain',2,109,'Satin');
+INSERT INTO 'paint_store'VALUES(13,'EmeraldExterior',3,99,'Satin');
+INSERT INTO 'paint_store'VALUES(14,'DurationExterior',4,89,'Satin');
+INSERT INTO 'paint_store'VALUES(15,'SuperPaintExterior',6,77,'Satin');
+INSERT INTO 'paint_store'VALUES(16,'A100',8,59,'Satin');
+Previous sets from lines 4 to 19 contain information that goes into the paint_store table. The table contains the primary key id, as well as the name of the paint 
+product, where it ranks to me personally, the price of the product and the sheen. 
+
+SELECT * FROM 'paint_store';
+SELECT *FROM 'paint_store' ORDER BY price desc;
+SELECT name FROM 'paint_store' ORDER by price desc;
+Lines 23 to 26 were used to choose specific parts of the data set instead of the whole thing like was done with the line 23 command. 
